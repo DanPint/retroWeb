@@ -51,31 +51,14 @@ p {
 footer {
     height: 20vh;
     width: 100vw;
-    background-color: aqua;
-    margin-top: 20vh;
-}
-
-.containerFooter {
-    height: 20vh;
-    width: 100vw;
+    background-color: white;
+/*    margin-top: 20vh;*/
     display: flex;
+    flex-direction: row;
 }
 
-.leftFooter {
-    flex: 1;
-    background-color: red;
-}
 
-.rightFooter {
-    flex: 1;
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-}
 
-.rightLinks { /*rightLinks top, rightLinks right, and rightLinks left?*/
-    flex: 1;
-}
 
 .top {
     background-color: pink;
@@ -90,6 +73,8 @@ footer {
 }
 
 
+
+
 /* !!!!!!!! */
 /* CSS Grid */
 /* !!!!!!!! */
@@ -98,19 +83,14 @@ footer {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr; /*sizing the columns*/
-    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 0.5fr; /*sizing the rows*/
+    grid-template-rows: 1fr 1fr 0.5fr; /*sizing the rows*/
     grid-template-areas: 
-        "menu menu menu menu"
-        "main main main main"
         "main-left main-left main-right main-right"
         "main-bottom main-bottom main-bottom main-bottom"
         "foot-left foot-middle foot-middle foot-right"
 }
 
-#menu {
-    background: grey;
-    grid-area: menu;
-}
+
 
 #main {
     background: pink;
@@ -151,24 +131,21 @@ footer {
 /*!!!!!!!!!!!*/
 /*My CSS Grid (Mobile)*/
 /*!!!!!!!!!!!*/
-
+p{
+    color: black;
+}
 
 /* Home page */
 .container {
     display: grid;
     height: 128vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5.5fr 3.2fr 0fr 7.225fr 7.225fr 1fr 4fr 8fr 5fr;
+    grid-template-rows: 3fr 3fr 1fr 2fr ;
     grid-template-areas: 
-        "logo logo logo"
-        "menu-left menu-mid menu-right"
-        "line-area line-area line-area"
         "top-images top-images top-images"
         "top-bottom-images top-bottom-images top-bottom-images"
         "heading heading heading"
-        "paragraph paragraph paragraph"
-        "bottom-image bottom-image bottom-image"
-        "bottom bottom bottom"
+        "paragraph paragraph paragraph"     
 }
 
 /* CSS Grid */
@@ -185,63 +162,63 @@ footer {
 #menu-left {
     background: #607D8B;
     grid-area: menu-left;
-    display: flex;
+/*    display: flex;*/
 }
 
 #menu-mid {
     background: #607D8B;
     grid-area: menu-mid;
-    display: flex;
+/*    display: flex;*/
 /*    width: 35vw;*/
 }
 
 #menu-right {
     background: #607D8B;
     grid-area: menu-right;
-    display: flex;
+/*    display: flex;*/
 }
 
 #line-area {
     background: #607D8B;
     grid-area: line-area;
-    display: flex;
+/*    display: flex;*/
 }
 
 /* CSS Grid (Home page) */
 #top-images {
     background: #607D8B;
     grid-area: top-images;
-    display: flex;
+/*    display: flex;*/
 }
 
 #top-bottom-images {
     background: #607D8B;
     grid-area: top-bottom-images;
-    display: flex;
+/*    display: flex;*/
 }
 
 #heading {
     background: #607D8B;
     grid-area: heading;
-    display: flex;
+/*    display: flex;*/
 }
 
 #paragraph {
     background: #607D8B;
     grid-area: paragraph;
-    display: flex;
+/*    display: flex;*/
 }
 
 #bottom-image {
     background: purple;
     grid-area: bottom-image;
-    display: flex;
+/*    display: flex;*/
 }
 
 #bottom {
     background: #607D8B;
     grid-area: bottom;
-    display: flex;
+/*    display: flex;*/
 }
 /* End of CSS Grid */
 
@@ -337,9 +314,9 @@ footer {
 */
 
 .gate {
-    flex: 1;
-    width: 37vw;
-    box-shadow: 0 0 0 0.75vh rgba(0, 0, 0, 0.5);
+flex: 1;
+    width: 83vw;
+    box-shadow: 0 0 0 0.75vh rgb(0 0 0 / 50%);
     margin: 2.2vh 4vh 2vh 4vh;
 }
 
@@ -386,7 +363,7 @@ footer {
     flex: 1;
     background: #E80000;
     box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-    margin: 5vh 9vh 6vh 9vh;
+/*    margin: 5vh 9vh 6vh 9vh;*/
     text-align: center;
     color: white;
     font-family: 'Impact';
@@ -400,20 +377,17 @@ footer {
     display: grid;
     height: 196vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5.5fr 3.2fr 0fr 1.225fr 2fr 6.7fr 6.7fr 5fr 6.7fr 6.7fr 6.7fr /*5.5fr*/;
+    grid-template-rows: 1fr 2fr  1.225fr 2fr 6.7fr 6.7fr 5fr /*5.5fr*/;
     grid-template-areas: 
-        "logo logo logo"
-        "menu-left menu-mid menu-right"
-        "line-area line-area line-area"
+        
         "heading2 heading2 heading2"
         "paragraph2 paragraph2 paragraph2"
         "brachiosaurus brachiosaurus brachiosaurus"
         "t-rex t-rex t-rex"
-        "bottom-image bottom-image bottom-image"
         "dilophosaurus dilophosaurus dilophosaurus"
         "field-dinos field-dinos field-dinos"
         "velociraptor velociraptor velociraptor"
-/*        "ingen-logo ingen-logo ingen-logo"*/
+        "ingen-logo ingen-logo ingen-logo"
 }
 
 /* CSS Grid (Dinos page) */
@@ -539,25 +513,31 @@ footer {
 /* People page */
 .container3 {
     display: grid;
-    height: 143vh;
+/*    height: 143vh;*/
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5.5fr 3.2fr 0fr 3fr 3fr 3fr 7fr 5fr;
+    grid-template-rows: 1fr 1fr 0fr;
     grid-template-areas: 
-        "logo logo logo"
-        "menu menu menu"
-        "line-area line-area line-area"
         "hammond hammond hammond-text"
         "wu wu wu-text"
+/*
         "bottom-image bottom-image bottom-image"
         "car car car"
         "car-text car-text car-text"
+*/
 }
 
-#menu {
+.menu {
     background: #607D8B;
     grid-area: menu;
     display: flex;
 }
+
+/*
+#menu {
+    background: grey;
+    grid-area: menu;
+}
+*/
 
 
 #hammond {
@@ -685,13 +665,12 @@ footer {
 #ingen-logo {
     background: #607D8B;
     grid-area: ingen-logo;
-    display: flex;
+    flex: 1;
 }
 
 .ingen {
     flex: 1;
-    width: 10vw;
-    margin: 3vh 17vh 5vh 17vh;
+    margin: 3vh 40vw;
 }
 
 
@@ -799,17 +778,12 @@ footer {
         height: 128vh;
         background-image: url("/images/static.jpeg");
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 5.5fr 3.2fr 3fr 3fr 1fr;
+        grid-template-rows: 5.5fr 3.2fr 3fr 3fr;
         grid-template-areas: 
             "logo logo logo logo"
             "menu-left menu-mid menu-right right"
             "left left left right"
             "bottom-left bottom-left bottom-left right"
-            "footer footer footer footer"
-    }
-    
-    footer {
-        grid-area: footer;
     }
     
     /* CSS Grid */
@@ -903,23 +877,31 @@ footer {
     /* Changing margin on buttons caused not being able to change pages */
     /* Home button (included on every page) */
     .home {
+        flex: 1;
+        background: #FFED00;
         width: 10vw;
         height: 5.8vh;
-        margin: 20vh -3vh 1vh 6vh;
+        margin: 20vh 1vh 1vh 1vh;
+        text-align: center;
+        color: black;
+        font-family: 'Impact';
         font-size: 2em;
         padding-top: 1.3vh;
-        z-index: 1;
     }
 
     /* Dinos button (included on every page) */
     .dinos {
+        flex: 1;
+        background: #E80000;
         width: 10vw;
         height: 5.8vh;
         box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-        margin: 19.5vh -3vh 1vh 5vh;
+        margin: 19.5vh 1vh 1vh 1vh;
+        text-align: center;
+        color: white;
+        font-family: 'Impact';
         font-size: 2em;
         padding-top: 1.3vh;
-        z-index: 1;
     }
 
     .dinos:hover{
@@ -931,13 +913,17 @@ footer {
 
     /* People button (included on every page) */
     .people {
+        flex: 1;
+        background: #E80000;
         width: 10vw;
         height: 5.8vh;
         box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-        margin: 19.5vh -3vh 1vh 5vh;
+        margin: 19.5vh 1vh 1vh 1vh;
+        text-align: center;
+        color: white;
+        font-family: 'Impact';
         font-size: 2em;
         padding-top: 1.3vh;
-        z-index: 1;
     }
 
     .people:hover{
@@ -960,12 +946,12 @@ footer {
         width: 29vw;
         height: 60vh;
         box-shadow: 0 0 0 0.75vh rgb(0 0 0 / 50%);
-        margin: 20.3vh 7vh 2vh 13vh;
+        margin: 20.3vh 7vh 5vh 13vh;
     }
 
     .mrdna {
-        width: 12vw;
-        height: 26vh;
+        width: 16vw;
+        height: 32vh;
         margin: 0vh 0vh 0vh 2vh;
     }
     
@@ -981,19 +967,21 @@ footer {
     }
 
     .heading {
-        font-size: 1.1em;
+        font-size: 1.0em;
         width: 39vw;
-        margin: 0vh 3vh 5.6vh -1vh;
+        margin: 1vh 3vh 0.6vh -5vh;
         z-index: 1;
     }
 
     .paragraph {
-        font-size: 0.9em;
-        letter-spacing: 0.06vw;
-        line-height: 4.2vh;
-        width: 37vw;
-        margin: -5vh 3vh 2vh -1vh;
-        z-index: 1;
+        flex: 1;
+        font-family: 'OpenSans-Bold', sans-serif;
+        color: white;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 0.30vw;
+        line-height: 2.5vh;
+        margin: 0vh 3vh 1vh 3vh;
     }
 
     /* Static picture (included on every page) */
