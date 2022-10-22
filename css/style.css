@@ -8,131 +8,15 @@
 body {
     background-color: #607D8B;
     margin: 0;
-/*    height: 100vh; viewport height - fits to whatever device you're on*/
     width: 100vw;
-}
-
-h1 {
-    font-family: 'OpenSans-Bold', sans-serif;
-    text-align: center;
-    font-size: 1.5em;
-    margin: 7vh 0 7vh 0; /*t r b l?*/
-    background-color: pink;
-    padding: 2em 6vw; /*t r b l?*/
-}
-
-p {
-    width: 61vw;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 34px;
-}
-
-.hello-one {
-    font-size: 10em;
-    color: red;
-    margin-left: 10vw;
-}
-
-.cuteButton {
-    width: 60vw;
-    height: 7vh;
-    background-color: red;
-    margin: 0 auto;
-    margin-top: 9vh;
-    color: white;
-    text-align: center;
-    padding-top: 5vh;
-    border-radius: 2em 0 0 2em;
-    box-shadow: 2em 2em 0 2em blue, 3em 3em 0 3em black;
 }
 
 footer {
     height: 20vh;
     width: 100vw;
     background-color: white;
-/*    margin-top: 20vh;*/
     display: flex;
     flex-direction: row;
-}
-
-
-
-
-.top {
-    background-color: pink;
-}
-
-.right {
-    background-color: blue;
-}
-
-.left {
-    background-color: green;
-}
-
-
-
-
-/* !!!!!!!! */
-/* CSS Grid */
-/* !!!!!!!! */
-
-.container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 0.5fr 0.5fr 1fr; /*sizing the columns*/
-    grid-template-rows: 1fr 1fr 0.5fr; /*sizing the rows*/
-    grid-template-areas: 
-        "main-left main-left main-right main-right"
-        "main-bottom main-bottom main-bottom main-bottom"
-        "foot-left foot-middle foot-middle foot-right"
-}
-
-
-
-#main {
-    background: pink;
-    grid-area: main;
-}
-
-#main-left {
-    background: purple;
-    grid-area: main-left;
-}
-
-#main-right {
-    background: grey;
-    grid-area: main-right;
-}
-
-#main-bottom {
-    background: blue;
-    grid-area: main-bottom;
-}
-
-#foot-left {
-    background: green;
-    grid-area: foot-left;
-}
-
-#foot-middle {
-    background: orange;
-    grid-area: foot-middle;
-}
-
-#foot-right {
-    background: pink;
-    grid-area: foot-right;
-}
-
-
-/*!!!!!!!!!!!*/
-/*My CSS Grid (Mobile)*/
-/*!!!!!!!!!!!*/
-p{
-    color: black;
 }
 
 /* Home page */
@@ -148,13 +32,11 @@ p{
         "paragraph paragraph paragraph"     
 }
 
-/* CSS Grid */
+
 #logo {
     background: #E80000;
     grid-area: logo;
-    
     margin: 0 0 1vh 0; 
-    /* top right bottom left */ /*units in vh*/
     box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
     /*w y blur spread color*/
 }
@@ -220,15 +102,12 @@ p{
     grid-area: bottom;
 /*    display: flex;*/
 }
-/* End of CSS Grid */
 
-/* Logo (included on every page) */
 #logo img {
     width: 51vw;
     margin: 2vw 24vw;  
 }
 
-/* Home button (included on every page) */
 .home {
     flex: 1;
     background: #FFED00;
@@ -242,17 +121,6 @@ p{
     padding-top: 1.3vh;
 }
 
-/*
-.home:not(:hover){
-    color: white;
-    background-color: #E80000;
-    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-    margin: 1.5vh 1vh 1vh 1vh;
-}
-*/
-
-
-/* Dinos button (included on every page) */
 .dinos {
     flex: 1;
     background: #E80000;
@@ -267,14 +135,15 @@ p{
     padding-top: 1.3vh;
 }
 
+/*
 .dinos:hover{
     color: black;
     background-color: #FFED00;
     box-shadow: none;
     margin: 2vh 1vh 1vh 1vh;
 }
+*/
 
-/* People button (included on every page) */
 .people {
     flex: 1;
     background: #E80000;
@@ -289,29 +158,21 @@ p{
     padding-top: 1.3vh;
 }
 
+/*
 .people:hover{
     color: black;
     background-color: #FFED00;
     box-shadow: none;
     margin: 2vh 1vh 1vh 1vh;
 }
+*/
 
-
-/* Horizontal line (included on every page) */
 .line {
     flex: 1;
     background-color: black;
     border-style: solid;
     margin: 1vh 2vh 1vh 2vh;
 }
-
-/*
-.imagesBackground {
-    background: #607D8B;
-    width 10vw;
-    height: 10vh;
-}
-*/
 
 .gate {
 flex: 1;
@@ -352,24 +213,20 @@ flex: 1;
     margin: 0vh 3vh 1vh 3vh;
 }
 
-/* Static picture (included on every page) */
 .static {
     width: 10vw;
     flex: 1;
 }
 
-/* Invest button */
 .invest {
     flex: 1;
     background: #E80000;
     box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-/*    margin: 5vh 9vh 6vh 9vh;*/
     text-align: center;
     color: white;
     font-family: 'Impact';
     font-size: 4em;
 }
-
 
 
 /* Dinos page */
@@ -390,7 +247,6 @@ flex: 1;
         "ingen-logo ingen-logo ingen-logo"
 }
 
-/* CSS Grid (Dinos page) */
 
 #heading2 {
     background: #607D8B;
@@ -450,7 +306,6 @@ flex: 1;
     text-align: left;
     font-size: 1.4em;
     margin: 1vh 3vh 0.6vh 3vh;
-/*    padding: 2em 6vw;*/
 }
 
 .paragraph2 {
@@ -462,7 +317,6 @@ flex: 1;
     letter-spacing: 0.30vw;
     line-height: 2.5vh;
     margin: 0vh 3vh 1vh 3vh;
-/*    width: 93vw;*/
 }
 
 .brachiosaurus {
@@ -786,7 +640,7 @@ flex: 1;
             "bottom-left bottom-left bottom-left right"
     }
     
-    /* CSS Grid */
+    
     #logo {
         background: #E80000;
         grid-area: logo;
