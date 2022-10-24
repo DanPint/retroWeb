@@ -8,12 +8,59 @@
 body {
     background-color: #607D8B;
     margin: 0;
-    width: 100vw;
+    width: fit-content;
+}
+
+.home {
+    flex: 1;
+    background: #FFED00;
+    width: 10vw;
+    height: 5.8vh;
+    margin: 2vh 1vh 1vh 1vh;
+    text-align: center;
+    color: black;
+    font-family: 'Impact';
+    font-size: 2em;
+    padding-top: 1.3vh;
+}
+
+.dinos {
+    flex: 1;
+    background: #E80000;
+    width: 10vw;
+    height: 5.8vh;
+    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
+    margin: 1.5vh 1vh 1vh 1vh;
+    text-align: center;
+    color: white;
+    font-family: 'Impact';
+    font-size: 2em;
+    padding-top: 1.3vh;
+}
+
+.people {
+    flex: 1;
+    background: #E80000;
+    width: 10vw;
+    height: 5.8vh;
+    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
+    margin: 1.5vh 1vh 1vh 1vh;
+    text-align: center;
+    color: white;
+    font-family: 'Impact';
+    font-size: 2em;
+    padding-top: 1.3vh;
+}
+
+hr {
+    background-color: black;
+    border-style: solid;
+    margin: 1.5vh 2vh 1vh 2vh;
 }
 
 footer {
     height: 20vh;
-    width: 100vw;
+/*    width: 100vw;*/
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -22,9 +69,9 @@ footer {
 /* Home page */
 .container {
     display: grid;
-    height: 128vh;
+    height: 76vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr 3fr 1fr 2fr ;
+    grid-template-rows: 1fr 1fr 0.5fr 0.55fr ;
     grid-template-areas: 
         "top-images top-images top-images"
         "top-bottom-images top-bottom-images top-bottom-images"
@@ -38,7 +85,6 @@ footer {
     grid-area: logo;
     margin: 0 0 1vh 0; 
     box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-    /*w y blur spread color*/
 }
 
 #menu-left {
@@ -60,11 +106,13 @@ footer {
 /*    display: flex;*/
 }
 
+/*
 #line-area {
     background: #607D8B;
     grid-area: line-area;
-/*    display: flex;*/
+    commented out - display: flex;
 }
+*/
 
 /* CSS Grid (Home page) */
 #top-images {
@@ -97,93 +145,32 @@ footer {
 /*    display: flex;*/
 }
 
-#bottom {
-    background: #607D8B;
-    grid-area: bottom;
-/*    display: flex;*/
-}
-
 #logo img {
     width: 51vw;
-    margin: 2vw 24vw;  
+    margin: 2vw 26vw;  
 }
 
-.home {
-    flex: 1;
-    background: #FFED00;
-    width: 10vw;
-    height: 5.8vh;
-    margin: 2vh 1vh 1vh 1vh;
-    text-align: center;
-    color: black;
-    font-family: 'Impact';
-    font-size: 2em;
-    padding-top: 1.3vh;
-}
 
-.dinos {
-    flex: 1;
-    background: #E80000;
-    width: 10vw;
-    height: 5.8vh;
-    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-    margin: 1.5vh 1vh 1vh 1vh;
-    text-align: center;
-    color: white;
-    font-family: 'Impact';
-    font-size: 2em;
-    padding-top: 1.3vh;
-}
 
 /*
-.dinos:hover{
-    color: black;
-    background-color: #FFED00;
-    box-shadow: none;
-    margin: 2vh 1vh 1vh 1vh;
-}
-*/
-
-.people {
-    flex: 1;
-    background: #E80000;
-    width: 10vw;
-    height: 5.8vh;
-    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-    margin: 1.5vh 1vh 1vh 1vh;
-    text-align: center;
-    color: white;
-    font-family: 'Impact';
-    font-size: 2em;
-    padding-top: 1.3vh;
-}
-
-/*
-.people:hover{
-    color: black;
-    background-color: #FFED00;
-    box-shadow: none;
-    margin: 2vh 1vh 1vh 1vh;
-}
-*/
-
 .line {
     flex: 1;
     background-color: black;
     border-style: solid;
     margin: 1vh 2vh 1vh 2vh;
 }
+*/
 
 .gate {
-flex: 1;
-    width: 83vw;
+    flex: 1;
+    width: 89vw;
     box-shadow: 0 0 0 0.75vh rgb(0 0 0 / 50%);
-    margin: 2.2vh 4vh 2vh 4vh;
+    margin: 2.2vh 3vh 2vh 3vh;
 }
 
 .map {
     flex: 1;
-    width: 10vw;
+    width: 41vw;
     box-shadow: 0 0 0 0.75vh rgba(0, 0, 0, 0.5);
     margin: 2vh 2vh 3vh 4vh;
 }
@@ -218,23 +205,13 @@ flex: 1;
     flex: 1;
 }
 
-.invest {
-    flex: 1;
-    background: #E80000;
-    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-    text-align: center;
-    color: white;
-    font-family: 'Impact';
-    font-size: 4em;
-}
-
 
 /* Dinos page */
 .container2 {
     display: grid;
     height: 196vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr  1.225fr 2fr 6.7fr 6.7fr 5fr /*5.5fr*/;
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.8fr 0.8fr 1fr 0.8fr /*5.5fr*/;
     grid-template-areas: 
         
         "heading2 heading2 heading2"
@@ -337,7 +314,7 @@ flex: 1;
     flex: 1;
     width: 10vw;
     box-shadow: 0 0 0 0.75vh rgba(0, 0, 0, 0.5);
-    margin: 3vh 3vh 3vh 3vh;
+    margin: 1vh 3vh 3vh 3vh;
 }
 
 .field-dinos {
@@ -369,7 +346,7 @@ flex: 1;
     display: grid;
 /*    height: 143vh;*/
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 0fr;
+    grid-template-rows: 0.9fr 1fr 0fr;
     grid-template-areas: 
         "hammond hammond hammond-text"
         "wu wu wu-text"
@@ -445,10 +422,10 @@ flex: 1;
     font-family: 'OpenSans-Bold', sans-serif;
     color: white;
     text-align: left;
-    font-size: 1.8em;
+    font-size: 2em;
     width: 10vw;
     line-height: 4vh;
-    margin: 1vh 3vh -2vh 1vh;
+    margin: 1vh 3vh -11vh 1vh;
 }
 
 .paragraph3 {
@@ -468,7 +445,7 @@ flex: 1;
     flex: 1;
     width: 10vw;
     box-shadow: 0 0 0 0.75vh rgba(0, 0, 0, 0.5);
-    margin: 4vh 1vh 3vh 3vh;
+    margin: 4vh 1vh 0vh 3vh;
 }
 
 .heading4 {
@@ -476,7 +453,7 @@ flex: 1;
     font-family: 'OpenSans-Bold', sans-serif;
     color: white;
     text-align: left;
-    font-size: 2.3em;
+    font-size: 2em;
     width: 10vw;
     line-height: 4.2vh;
     margin: 3vh 10vh -7vh 1vh;
@@ -522,6 +499,24 @@ flex: 1;
     flex: 1;
 }
 
+#bottom {
+    background: #607D8B;
+    grid-area: bottom;
+/*    display: flex;*/
+}
+
+
+.invest {
+    flex: 1;
+    background: #E80000;
+    box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    font-family: 'Impact';
+    font-size: 4em;
+    margin: 0vh 2vh 0vh 2vh;
+}
+
 .ingen {
     flex: 1;
     margin: 3vh 40vw;
@@ -544,32 +539,51 @@ flex: 1;
 /* Whatever you need to change based on screensize, you can change in the media queries */
 /* Mobile */
 @media screen and (min-width: 768px) {
-    .container {
-        height: 246vh;
+    
+    .home {
+        height: 6.8vh;
     }
     
+    .dinos {
+        height: 6.8vh;
+    }
+    
+    .people {
+        height: 6.8vh;
+    }
+    
+    
+    .container {
+        height: 246vh;
+        grid-template-rows: 0.60fr 1fr 0.15fr 0.2fr;
+    }
+    
+    .gate {
+        margin-left: 9vh;
+        margin-top: 3vh;
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+    }
+    
+    .map {
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-left: 9vh;
+    }
+    
+/*
     .line {
         margin: 2vh 2vh 2vh 2vh;
     }
+*/
     
     .heading {
         font-size: 3.4em;
-        margin: 1vh 3vh 1.2vh 3vh;
+        margin-left: 5vh;
     }
 
     .paragraph {
         line-height: 3.75vh;
         letter-spacing: 0.2vw;
         font-size: 1.7em;
-    }
-    
-    .invest {
-        margin: 5vh 25vh 6vh 25vh;
-        font-size: 6em;
-    }
-    
-    .ingen {
-        margin: 3vh 37vh 5vh 37vh;
     }
     
     
@@ -623,6 +637,17 @@ flex: 1;
         line-height: 4.7vh;
         font-size: 2em;
         margin: 0vh 3vh 1vh 3vh;
+    }
+    
+    
+    .invest {
+        font-size: 6em;
+        margin-left: 4vh;
+        margin-right: 4vh;
+    }
+    
+    .ingen {
+        margin-left: 59vh;
     }
 }
 
@@ -693,9 +718,11 @@ flex: 1;
         margin: -16vh 9vh 5vh 0vh;
     }
 
+/*
     #line-area {
         display: none;
     }
+*/
 
     /* CSS Grid (Home page) */
     #top-images {
