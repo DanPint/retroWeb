@@ -554,8 +554,8 @@ footer {
     
     
     .container {
-        height: 246vh;
-        grid-template-rows: 0.60fr 1fr 0.15fr 0.2fr;
+        height: 193vh;
+        grid-template-rows: 0.5fr 0.5fr 0.15fr 0.2fr;
     }
     
     .gate {
@@ -567,6 +567,12 @@ footer {
     .map {
         box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
         margin-left: 9vh;
+    }
+    
+    .mrdna {
+        height: 61vh;
+        margin-bottom: 3vh;
+        margin-left: 5vh;
     }
     
 /*
@@ -581,14 +587,16 @@ footer {
     }
 
     .paragraph {
-        line-height: 3.75vh;
-        letter-spacing: 0.2vw;
+        line-height: 5vh;
+        letter-spacing: 0.15vw;
         font-size: 1.7em;
+        margin-left: 5vh;
+        margin-top: 1vh;
     }
     
     
     .container2 {
-        height: 386vh;
+        height: 438vh;
     }
     
     .heading2 {
@@ -596,40 +604,84 @@ footer {
     }
 
     .paragraph2 {
-        line-height: 3.75vh;
-        letter-spacing: 0.2vw;
+        line-height: 5vh;
+        letter-spacing: 0.15vw;
         font-size: 1.7em;
+        margin-bottom: 2vh;
+    }
+    
+    .brachiosaurus {
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+    .t-rex {
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+    .dilophosaurus {
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+    .field-dinos {
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    
+    .velociraptor {
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-top: 3vh;
+        margin-bottom: 3vh;
     }
     
     
     .container3 {
-        height: 292vh;
+        height: 178vh;
+    }
+    
+    .hammond-image {
+        height: 65vh;
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-top: 4vh;
+        margin-left: 6vh;
     }
     
     .heading3 {
         font-size: 3.8em;
-        line-height: 7vh;
-        margin: 0.5vh 3vh -12vh 1vh;
+        line-height: 9vh;
+        margin: 2.5vh 3vh 0vh 4vh;
     }
 
     .paragraph3 {
-        letter-spacing: 0.2vw;
-        line-height: 4.7vh;
+        letter-spacing: 0.16vw;
+        line-height: 6.5vh;
         font-size: 2.5em;
-        margin: 0vh 0vh 1vh 1vh;
+        margin: 0vh 0vh 32vh 4vh;
+    }
+    
+    .wu-image {
+        height: 90vh;
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        margin-left: 6vh;
     }
 
     .heading4 {
         font-size: 3.8em;
-        line-height: 7vh;
-        margin: 2.5vh 10vh -29vh 1vh;
+        line-height: 9vh;
+        margin: 2.5vh 10vh 0vh 4vh;
     }
 
     .paragraph4 {
-        letter-spacing: 0.2vw;
-        line-height: 4.7vh;
+        letter-spacing: 0.16vw;
+        line-height: 6.5vh;
         font-size: 2.5em;
-        margin: 0vh 0vh 1vh 1vh;
+        margin: 0vh 0vh 32vh 4vh;
     }
 
     .paragraph5 {
