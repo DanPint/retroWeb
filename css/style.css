@@ -60,7 +60,6 @@ hr {
 
 footer {
     height: 20vh;
-/*    width: 100vw;*/
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -90,59 +89,42 @@ footer {
 #menu-left {
     background: #607D8B;
     grid-area: menu-left;
-/*    display: flex;*/
 }
 
 #menu-mid {
     background: #607D8B;
     grid-area: menu-mid;
-/*    display: flex;*/
-/*    width: 35vw;*/
 }
 
 #menu-right {
     background: #607D8B;
     grid-area: menu-right;
-/*    display: flex;*/
+
 }
 
-/*
-#line-area {
-    background: #607D8B;
-    grid-area: line-area;
-    commented out - display: flex;
-}
-*/
-
-/* CSS Grid (Home page) */
 #top-images {
     background: #607D8B;
     grid-area: top-images;
-/*    display: flex;*/
 }
 
 #top-bottom-images {
     background: #607D8B;
     grid-area: top-bottom-images;
-/*    display: flex;*/
 }
 
 #heading {
     background: #607D8B;
     grid-area: heading;
-/*    display: flex;*/
 }
 
 #paragraph {
     background: #607D8B;
     grid-area: paragraph;
-/*    display: flex;*/
 }
 
 #bottom-image {
     background: purple;
     grid-area: bottom-image;
-/*    display: flex;*/
 }
 
 #logo img {
@@ -150,16 +132,6 @@ footer {
     margin: 2vw 26vw;  
 }
 
-
-
-/*
-.line {
-    flex: 1;
-    background-color: black;
-    border-style: solid;
-    margin: 1vh 2vh 1vh 2vh;
-}
-*/
 
 .gate {
     flex: 1;
@@ -200,10 +172,6 @@ footer {
     margin: 0vh 3vh 1vh 3vh;
 }
 
-.static {
-    width: 10vw;
-    flex: 1;
-}
 
 
 /* Dinos page */
@@ -211,7 +179,7 @@ footer {
     display: grid;
     height: 196vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.2fr 1fr 0.8fr 0.8fr 1fr 0.8fr /*5.5fr*/;
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.8fr 0.8fr 1fr 0.8fr;
     grid-template-areas: 
         
         "heading2 heading2 heading2"
@@ -266,14 +234,6 @@ footer {
     grid-area: velociraptor;
     display: flex;
 }
-
-/*
-#ingen-logo {
-    background: #607D8B;
-    grid-area: ingen-logo;
-    display: flex;
-}
-*/
 
 
 .heading2 {
@@ -331,44 +291,24 @@ footer {
     margin: 1vh 3vh 3vh 3vh;
 }
 
-/*
-.ingen {
-    flex: 1;
-    width: 10vw;
-    margin: 3vh 17vh 5vh 17vh;
-}
-*/
-
 
 
 /* People page */
 .container3 {
     display: grid;
-/*    height: 143vh;*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.9fr 1fr 0fr;
     grid-template-areas: 
         "hammond hammond hammond-text"
         "wu wu wu-text"
-/*
-        "bottom-image bottom-image bottom-image"
-        "car car car"
-        "car-text car-text car-text"
-*/
 }
+
 
 .menu {
     background: #607D8B;
     grid-area: menu;
     display: flex;
 }
-
-/*
-#menu {
-    background: grey;
-    grid-area: menu;
-}
-*/
 
 
 #hammond {
@@ -492,7 +432,7 @@ footer {
 
 
 
-/* INCLUDE A FOOTER FOR WEBSITE! */
+/* Footer */
 #ingen-logo {
     background: #607D8B;
     grid-area: ingen-logo;
@@ -502,7 +442,6 @@ footer {
 #bottom {
     background: #607D8B;
     grid-area: bottom;
-/*    display: flex;*/
 }
 
 
@@ -523,21 +462,7 @@ footer {
 }
 
 
-/*
-.menu{
-    display: flex;
-    flex-direction: row;
-}
-
-#menu-left #menu-mid #menu-right {
-    flex: 1;
-}
-*/
-
-
 /* Media Queries */
-/* Whatever you need to change based on screensize, you can change in the media queries */
-/* Mobile */
 @media screen and (min-width: 768px) {
     
     .home {
@@ -698,7 +623,6 @@ footer {
     
 }
 
-/* Desktop */
 @media screen and (min-width: 992px) {
     
     .container {
@@ -869,13 +793,4 @@ footer {
     }
     
 }
-
-
-
-
-
-
-
-
-
 

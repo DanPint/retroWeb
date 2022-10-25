@@ -1,26 +1,3 @@
-
-//$(".text, .image").hide();
-//
-//$("h1").click(function() {
-//    $(".text").fadeIn(1000);
-//});
-//
-//$(".text").click(function() {
-//    $(".image").slideDown(2000); /*.show(), .slideUp()*/
-//});
-
-//$(".big_image, .x").hide();
-//
-//$(".image").click(function() {
-//    $(".big_image").fadeIn(1000);
-//    $(".x").fadeIn(1000);
-//});
-//
-//$(".big_image").click(function() {
-//    $(this).fadeOut(1000); // or $(".big_image").fadeOut(1000);
-//});
-
-
 $(".container2").hide();
 $(".container3").hide();
 
@@ -48,7 +25,6 @@ $(".home").click(function() {
 
 // Takes you to dinos page
 $(".dinos").click(function() {
-//    $(this).css("background-color", "yellow");
     $(".people").css("background-color", "#E80000");
     $(".people").css("color", "white");
     $(".people").css("box-shadow", "0 1vh 0 0 rgba(0, 0, 0, 0.5)");
@@ -91,33 +67,12 @@ $(".people").click(function() {
     $(".container3").show();
 });
 
-//// Takes you to home page
-//$(".home").click(function() {
-//    $(".people").css("background-color", "red");
-//    $(".home").css("background-color", "yellow");
-//    $(".dinos").css("background-color", "red");
-//    $(".container2").hide();
-//    $(".container3").hide();
-//    $(".container").show();
-//    
-//});
-//
-//// Takes you to dinos page
-//$(".dinos").click(function() {
-//    $(".people").css("background-color", "red");
-//    $(".home").css("background-color", "red");
-//    $(".dinos").css("background-color", "yellow");
-//    $(".container").hide();
-//    $(".container3").hide();
-//    $(".container2").show();
-//});
-//
-//// Takes you to people page
-//$(".people").click(function() {
-//    $(".people").css("background-color", "yellow");
-//    $(".home").css("background-color", "red");
-//    $(".dinos").css("background-color", "red");
-//    $(".container").hide();
-//    $(".container2").hide();
-//    $(".container3").show();
-//});
+// Animates invest button
+$(".invest").click(function() {
+    $(".invest").css("background-color", "#FFED00");
+    $(".invest").css("color", "black");
+    $(".invest").css("box-shadow", "none");
+    $(".invest").css("margin", "2vh 1vh 1vh 1vh");
+});
+
+
