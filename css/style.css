@@ -762,6 +762,90 @@ footer {
 
 @media screen and (min-width: 1200px) {
     
+    .container {
+        height: 239vh;
+    }
+    
+    .gate {
+        margin-left: 14vh;
+    }
+    
+    .map {
+        height: 96vh;
+        margin-left: 14vh;
+    }
+    
+    .mrdna {
+        height: 84vh;
+        margin-bottom: 8vh;
+        margin-left: 20vh;
+    }
+    
+    .heading {
+        margin-left: 14vh;
+    }
+    
+    .paragraph {
+        margin-left: 14vh;
+        width: 180vh;
+    }
+    
+    
+    .container2 {
+        height: 552vh;
+    }
+    
+    .brachiosaurus {
+        height: 98vh;
+    }
+    
+    .t-rex {
+        height: 98vh;
+    }
+    
+    .dilophosaurus {
+        height: 98vh;
+    }
+    
+    .field-dinos {
+        height: 98vh;
+    }
+    
+    .velociraptor {
+        height: 98vh;
+    }
+    
+    
+    .container3 {
+        height: 228vh;
+    }
+    
+    .hammond-image {
+        height: 83vh;
+    }
+    
+    .paragraph3 {
+        margin-bottom: 50vh;
+    }
+    
+    .paragraph4 {
+        margin-bottom: 62vh;
+    }
+    
+    .wu-image {
+        height: 120vh;
+    }
+    
+    
+    .invest {
+        margin-left: 7vh;
+        margin-right: 7vh;
+    }
+    
+    .ingen {
+        margin-left: 97vh;
+    }
+    
 }
 
 @media screen and (min-width: 1400px) {
