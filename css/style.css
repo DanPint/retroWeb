@@ -850,6 +850,24 @@ footer {
 
 @media screen and (min-width: 1400px) {
     
+    .paragraph {
+        letter-spacing: 0.11vw;
+    }
+    
+    
+    .container2 {
+        height: 551vh;
+    }
+    
+    .paragraph2 {
+        letter-spacing: 0.11vw;
+    }
+    
+    
+    .ingen {
+        margin-left: 98vh;
+    }
+    
 }
 
 
