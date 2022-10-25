@@ -575,12 +575,6 @@ footer {
         margin-left: 5vh;
     }
     
-/*
-    .line {
-        margin: 2vh 2vh 2vh 2vh;
-    }
-*/
-    
     .heading {
         font-size: 3.4em;
         margin-left: 5vh;
@@ -701,252 +695,69 @@ footer {
     .ingen {
         margin-left: 59vh;
     }
+    
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
+    
     .container {
-        height: 128vh;
-        background-image: url("/images/static.jpeg");
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 5.5fr 3.2fr 3fr 3fr;
-        grid-template-areas: 
-            "logo logo logo logo"
-            "menu-left menu-mid menu-right right"
-            "left left left right"
-            "bottom-left bottom-left bottom-left right"
+        height: 225vh;
     }
     
-    
-    #logo {
-        background: #E80000;
-        grid-area: logo;
-        margin: 5vh 21vh 0vh 21vh;
-        box-shadow: 0 1vh 0 0 rgb(0 0 0 / 50%);
-        border-radius: 1vh 1vh 1vh 1vh;
-        z-index: 1;
-    }
-
-    #menu-left {
-        background: #607D8B;
-        grid-area: menu-left;
-        display: flex;
-        margin: -16vh 0vh 0vh 9vh;
-    }
-
-    #menu-mid {
-        background: #607D8B;
-        grid-area: menu-mid;
-        display: flex;
-        margin: -16vh 0vh 0vh 0vh;
-    }
-
-    #menu-right {
-        background: #607D8B;
-        grid-area: menu-right;
-        display: flex;
-        margin: -16vh 0vh 0vh 0vh;
-    }
-    
-    #left {
-        background: #607D8B;
-        grid-area: left;
-        display: flex;
-        margin: 0vh 0vh 0vh 9vh;
-    }
-    
-    #bottom-left {
-        background: #607D8B;
-        grid-area: bottom-left;
-        display: flex;
-        margin: 0vh 0vh 5vh 9vh;
-    }
-    
-    #right {
-        background: #607D8B;
-        grid-area: right;
-        display: flex;
-        flex-direction: column;
-        margin: -16vh 9vh 5vh 0vh;
-    }
-
-/*
-    #line-area {
-        display: none;
-    }
-*/
-
-    /* CSS Grid (Home page) */
-    #top-images {
-        display: none;
-    }
-
-    #top-bottom-images {
-        display: none;
-    }
-
-    #heading {
-        display: none;
-    }
-
-    #paragraph {
-        display: none;
-    }
-
-    #bottom-image {
-        display: none;
-    }
-
-    #bottom {
-        display: none;
-    }
-
-    /* Logo (included on every page) */
-    #logo img {
-        width: 18vw;
-        margin: 1vh 1vh 1vh 48vh;  
-    }
-    
-    /* Changing margin on buttons caused not being able to change pages */
-    /* Home button (included on every page) */
-    .home {
-        flex: 1;
-        background: #FFED00;
-        width: 10vw;
-        height: 5.8vh;
-        margin: 20vh 1vh 1vh 1vh;
-        text-align: center;
-        color: black;
-        font-family: 'Impact';
-        font-size: 2em;
-        padding-top: 1.3vh;
-    }
-
-    /* Dinos button (included on every page) */
-    .dinos {
-        flex: 1;
-        background: #E80000;
-        width: 10vw;
-        height: 5.8vh;
-        box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-        margin: 19.5vh 1vh 1vh 1vh;
-        text-align: center;
-        color: white;
-        font-family: 'Impact';
-        font-size: 2em;
-        padding-top: 1.3vh;
-    }
-
-    .dinos:hover{
-        color: black;
-        background-color: #FFED00;
-        box-shadow: none;
-        margin: 2vh 1vh 1vh 1vh;
-    }
-
-    /* People button (included on every page) */
-    .people {
-        flex: 1;
-        background: #E80000;
-        width: 10vw;
-        height: 5.8vh;
-        box-shadow: 0 1vh 0 0 rgba(0, 0, 0, 0.5);
-        margin: 19.5vh 1vh 1vh 1vh;
-        text-align: center;
-        color: white;
-        font-family: 'Impact';
-        font-size: 2em;
-        padding-top: 1.3vh;
-    }
-
-    .people:hover{
-        color: black;
-        background-color: #FFED00;
-        box-shadow: none;
-        margin: 2vh 1vh 1vh 1vh;
-    }
-
     .gate {
-        flex: 1;
-        width: 37vw;
-        box-shadow: 0 0 0 0.75vh rgb(0 0 0 / 50%);
-        margin: -2.8vh -2vh 2vh 7vh;
-        z-index: 1;
-    }
-
-    .map {
-        flex: 1;
-        width: 29vw;
-        height: 60vh;
-        box-shadow: 0 0 0 0.75vh rgb(0 0 0 / 50%);
-        margin: 20.3vh 7vh 5vh 13vh;
-    }
-
-    .mrdna {
-        width: 16vw;
-        height: 32vh;
-        margin: 0vh 0vh 0vh 2vh;
+        margin-left: 11.5vh;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+        box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
     }
     
-    .text-box {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        font-family: 'OpenSans-Bold', sans-serif;
-        color: white;
-        text-align: left;
-        font-size: 1.4em;
-        margin: 1vh 3vh 0.6vh 3vh;
+    .map {
+        box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
+        margin-left: 11.5vh;
     }
-
+    
+    .mrdna {
+        height: 78vh;
+        margin-bottom: 4vh;
+        margin-left: 9vh;
+    }
+    
     .heading {
-        font-size: 1.0em;
-        width: 39vw;
-        margin: 1vh 3vh 0.6vh -5vh;
-        z-index: 1;
+        margin-left: 11.5vh;
     }
 
     .paragraph {
-        flex: 1;
-        font-family: 'OpenSans-Bold', sans-serif;
-        color: white;
-        text-align: left;
-        font-weight: 500;
-        letter-spacing: 0.30vw;
-        line-height: 2.5vh;
-        margin: 0vh 3vh 1vh 3vh;
+        line-height: 5.5vh;
+        margin-left: 11.5vh;
     }
-
-    /* Static picture (included on every page) */
-    .static {
-        width: 10vw;
-        flex: 1;
+    
+    
+    .container2 {
+        height: 556vh;
     }
-
-    /* Invest button */
+    
+    
+    .hammond-image {
+        box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
+        margin-right: 2vh;
+    }
+    
+    .wu-image {
+        box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
+        margin-right: 2vh;
+    }
+    
+    
     .invest {
-        flex: 1;
-        background: #E80000;
-        box-shadow: 0 1vh 0 0 rgb(0 0 0 / 50%);
-        margin: 4vh 6vh 6vh 12.2vh;
-        text-align: center;
-        color: white;
-        font-family: 'Impact';
-        font-size: 4em;
+        margin-left: 5vh;
+        margin-right: 5vh;
     }
     
-    
-    #ingen-logo {
-        background: #607D8B;
-        grid-area: ingen-logo;
-        display: flex;
-    }
-
     .ingen {
-        flex: 1;
-        width: 10vw;
-        margin: 20vh 0vh 0vh 0vh;
+        margin-left: 79vh;
     }
+    
 }
 
 @media screen and (min-width: 1200px) {
