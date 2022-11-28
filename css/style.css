@@ -625,35 +625,97 @@ footer {
 
 @media screen and (min-width: 992px) {
     
+    body {
+        margin: 0 auto;
+        width: revert;
+    }
+    
+    #logo img {
+        width: 30vw;
+        margin: 3vh 2vh 2vh 2vh;
+    }
+    
+    .menu {
+        background: #607D8B;
+        grid-area: menu;
+        display: flex;
+        width: 85vw;
+        margin: 0 auto;
+    }
+    
+/*
     .container {
         height: 225vh;
     }
+*/
     
+    .container {
+        height: 158vh;
+    }
+    
+/*
     .gate {
         margin-left: 11.5vh;
         margin-top: 4vh;
         margin-bottom: 5vh;
         box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
     }
+*/
+    .gate {
+        margin-left: 11.1vh;
+        margin-top: 3vh;
+        box-shadow: 0 0 0 1.15vh rgb(0 0 0 / 50%);
+        width: 50vw;
+    }
     
+/*
     .map {
         box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
         margin-left: 11.5vh;
     }
+*/
+    .map {
+        box-shadow: 0 0 0 1.5vh rgb(0 0 0 / 50%);
+        margin-left: 11.5vh;
+        width: 34vw;
+    }
     
+/*
     .mrdna {
         height: 78vh;
         margin-bottom: 4vh;
         margin-left: 9vh;
     }
+*/
+    .mrdna {
+        height: 57vh;
+        margin-bottom: 4vh;
+        margin-left: 9vh;
+    }
     
+/*
     .heading {
         margin-left: 11.5vh;
     }
+*/
+    .heading {
+        margin-left: 11.5vh;
+        font-size: 2.7em;
+        width: 80vw;
+    }
 
+/*
     .paragraph {
         line-height: 5.5vh;
         margin-left: 11.5vh;
+    }
+*/
+    
+    .paragraph {
+        line-height: 5.5vh;
+        margin-left: 11.5vh;
+        font-size: 1.3em;
+        width: 80vw;
     }
     
     
@@ -673,14 +735,23 @@ footer {
     }
     
     
+/*
     .invest {
         margin-left: 5vh;
         margin-right: 5vh;
     }
+*/
     
+    .invest {
+        margin: 0 auto;
+        width: 60vw;
+    }
+    
+/*
     .ingen {
         margin-left: 79vh;
     }
+*/
     
 }
 
